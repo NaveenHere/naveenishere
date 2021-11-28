@@ -37,7 +37,7 @@
     </div>
   </div>
   <nav>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span id="Ham-icon" onclick="openNav()">&#9776;</span>
   </nav>
 
   <!-- HEADER SECTION -->
@@ -58,16 +58,16 @@
   <div class="div1">
     <h2 id="about">About Me</h2>
     <hr>
-    <p style="line-height: 30px;">My name is Naveen Das, a beginner <b>"Front-end Web Developer"</b>. I was born in
-      Uttar Pradesh, India. I am currently pursuing Bachelor's of Computer Application (BCA) from CCS University,
+    <p id="about-me">My name is Naveen Das, a beginner <b>"Front-end Web Developer"</b>. I was born in Uttar Pradesh,
+      India. I am
+      currently pursuing Bachelor's of Computer Application (BCA) from CCS University,
       Meerut. And i love drawing and designing from my
       school days. So, I found my passion in Web designing and developement. By the help of web designing I can turn my
-      ideas and imaginations from paper to web.<br><span
-        style="color: teal; font-style: italic; font-size: 1.2rem;"><strong>Let's create
+      ideas and imaginations from paper to web.<br><span id="let"><strong>Let's create
           something awesome.</strong></span></p>
 
     <div class="CV">
-      <a href="images/CV.docx" download>Curriculum vitae <i class="far fa-file-download"></i>
+      <a href="images/NAVEEN DAS RESUME.pdf" download>Curriculum vitae <i class="far fa-file-download"></i>
       </a>
     </div>
 
@@ -98,7 +98,7 @@
     <br>
 
     <h2>Certificates</h2>
-    <h4 style="line-height: 30px;">Click on the links below to see my certificates(All are verified Certificates).</h4>
+    <p id="cert-subhead">Click on the links below to see my certificates(All are verified Certificates).</p>
     <hr>
 
     <div id="certificate">
@@ -133,7 +133,7 @@
           <p class="pro-para">Hotel-Paradise</p>
           <p>HTML / CSS</p>
         </div>
-        <div class="pro-button"><a href="https://hotel-paradise.live/" target="_blank">View Project
+        <div class="pro-button"><a href="https://naveenhere.github.io/Hotel-Paradise.com" target="_blank">View Project
             <i class="far fa-arrow-right"></i></a></div>
       </div>
     </div>
@@ -144,7 +144,7 @@
           <p class="pro-para">Portfolio</p>
           <p>HTML / CSS / JS</p>
         </div>
-        <div class="pro-button"><a href="https://naveenishere.me/" target="_blank">View Project <i
+        <div class="pro-button"><a href="https://naveenhere.github.io/NaveenIsHere.in/" target="_blank">View Project <i
               class="far fa-arrow-right"></i></a></div>
       </div>
     </div>
@@ -237,37 +237,7 @@
   </footer>
   <input type="checkbox" onclick="myFunction()">
 
-
-  <!-- javascript execution section -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-    }
-    function openNav() {
-      document.getElementById("myNav").style.width = "50%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-    // Scroll To Button
-    var mybutton = document.getElementById("ScrollBtn");
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
