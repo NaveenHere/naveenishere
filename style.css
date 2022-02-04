@@ -483,6 +483,10 @@ h2 {
   transform: scale(1.4);
 }
 
+#toggle_see {
+  display: none;
+}
+
 /* Contact me section */
 
 .div2, .div3 {
@@ -788,16 +792,16 @@ footer>ul li a:hover::before {
   .pro-item {
     width: 98%;
   }
-  
+
   .slide-track {
     width: calc(210px * 18);
   }
-  
+
   @keyframes autoscroll {
     0% {
       transform: translateX(0);
     }
-  
+
     100% {
       transform: translateX(calc(-210px * 9));
     }
@@ -805,6 +809,22 @@ footer>ul li a:hover::before {
 
   .row {
     margin: .8rem;
+  }
+
+  .row_toggle {
+    height: 377vw;
+    overflow: hidden;
+  }
+
+  /*Toggle function */
+  #toggle_see {
+    font-size: .8rem;
+    text-align: center;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding: .6rem;
+    margin: 0 2rem;
+    display: block;
   }
 
   .column {
