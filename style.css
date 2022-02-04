@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,9 +10,10 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
-  color: black;
+  background: url("images/darkwall.webp");
+  color: #fff;
   backdrop-filter: blur(4px);
   font-weight: 600;
   user-select: none;
@@ -18,13 +21,17 @@ body {
 
 /* Heading section */
 
+.head-contain {
+  margin-top: 3.5rem;
+}
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.4rem;
 }
 
 .typing {
@@ -32,6 +39,11 @@ body {
   animation: type 2s steps(38), blink 2s step-start infinite alternate;
   white-space: nowrap;
   overflow: hidden;
+  text-shadow: 0 5px 10px #000;
+}
+
+.typing h1, p {
+  margin: 1rem;
 }
 
 @keyframes type {
@@ -87,18 +99,18 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background: #121212;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 4%;
+  top: 2%;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 .overlay a {
@@ -107,7 +119,7 @@ nav {
   font-size: 36px;
   color: grey;
   display: block;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -138,9 +150,53 @@ nav {
   font-size: 60px;
 }
 
+.nav-logo {
+  position: absolute;
+  top: 48px;
+  left: 42px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  text-shadow: 0 0px 10px #000;
+}
+
+.select-text {
+  margin: 12rem 0rem 0rem 2.5rem;
+}
+
+.selected-pro {
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  margin: 0rem 0rem 0rem 2.2rem;
+}
+
+.selected-pro::-webkit-scrollbar {
+  display: none;
+}
+
+.selected-item {
+  width: 30%;
+  height: auto;
+  flex-shrink: 0;
+  margin: 1rem .5rem 1rem .5rem;
+  border-radius: 8px;
+}
+
+.selected-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 4px #000;
+}
+
 #Ham-icon {
-  font-size: 30px;
-  cursor: pointer
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: .2rem .5rem;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, turquoise, tan, palevioletred);
+  border-image-slice: 1;
 }
 
 /* Image section */
@@ -155,7 +211,7 @@ nav {
 
 h2 {
   font-size: 2rem;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 10px #000;
 }
 
 /* My skills section */
@@ -165,12 +221,12 @@ h2 {
   padding: 0% 10%;
 }
 
-#about-me, #cert-subhead{
+#about-me, #cert-subhead {
   line-height: 30px;
 }
 
 #let {
-  color: teal;
+  color: turquoise;
   font-style: italic;
   font-size: 1.2rem;
 }
@@ -182,16 +238,16 @@ h2 {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
-.skill, .skill2, .skill3 {
-  background-color: turquoise;
-  padding: 1%;
+.skill, .skill2, .skill3, .skill4 {
+  background: linear-gradient(to right, turquoise, tan, palevioletred);
+  padding: .5rem;
   text-align: right;
   font-size: 20px;
-  border-radius: 15px;
-  margin: 0px;
+  border-radius: 50px;
+  margin: .2rem;
   animation-name: html;
   animation-duration: 2s;
 }
@@ -204,8 +260,12 @@ h2 {
   animation-name: c;
 }
 
+.skill4 {
+  animation-name: sass;
+}
+
 .html {
-  width: 70%;
+  width: 85%;
 }
 
 @keyframes html {
@@ -214,12 +274,12 @@ h2 {
   }
 
   to {
-    width: 70%;
+    width: 85%;
   }
 }
 
 .css {
-  width: 60%;
+  width: 70%;
 }
 
 @keyframes css {
@@ -228,7 +288,7 @@ h2 {
   }
 
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -243,6 +303,20 @@ h2 {
 
   to {
     width: 40%;
+  }
+}
+
+.sass {
+  width: 50%;
+}
+
+@keyframes sass {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
   }
 }
 
@@ -281,6 +355,22 @@ h2 {
 
 .pro-container::-webkit-scrollbar {
   display: none;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(125px * 18);
+  animation: autoscroll 40s linear infinite;
+}
+
+@keyframes autoscroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-125px * 9));
+  }
 }
 
 .pro-item {
@@ -354,10 +444,43 @@ h2 {
   background-color: turquoise;
   color: white;
   box-shadow: 0px 0px 8px turquoise;
+  transition: .3s ease;
 }
 
 .pro-para {
   color: teal;
+}
+
+/* UI Design Section */
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0rem 0rem 2rem 9.5rem;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 18%;
+  padding: .5rem .5rem;
+}
+
+.column img {
+  vertical-align: middle;
+  margin-top: .8rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 4px #000;
+  transition: transform .3s ease;
+}
+
+.column img:hover {
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 /* Contact me section */
@@ -375,6 +498,8 @@ h2 {
 input[type="text"], input[type="email"] {
   padding: 16px;
   width: 100%;
+  border-radius: 8px;
+  border: none;
 }
 
 button {
@@ -383,6 +508,7 @@ button {
   border: 2px solid turquoise;
   outline: none;
   transition: .3s ease;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -463,48 +589,6 @@ footer>ul li a:hover::before {
   color: turquoise;
 }
 
-.dark-mode {
-  background: url("images/dark.webp") no-repeat fixed;
-  background-size: cover;
-  color: white;
-}
-
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 8px;
-  left: 50px;
-  width: 54px;
-  height: 30px;
-  border: 2px solid black;
-  outline: none;
-  border-radius: 30px;
-  transition: .3s;
-  cursor: pointer;
-}
-
-input[type="checkbox"]::before {
-  content: "";
-  position: absolute;
-  top: .5px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  background: black;
-  border-radius: 50%;
-  transition: .3s ease;
-}
-
-input[type="checkbox"]:checked:before {
-  transform: translateX(25px);
-  background: white;
-}
-
-input[type="checkbox"]:checked {
-  border-color: white;
-}
-
 .CV {
   margin: 2rem 0 5rem 0;
 }
@@ -536,7 +620,7 @@ input[type="checkbox"]:checked {
 
 .skill-icon i {
   font-size: 2.8rem;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,6 +664,15 @@ input[type="checkbox"]:checked {
 /* Media queries section */
 
 @media screen and (max-width: 480px) {
+
+  .typing h1, p {
+    margin: .6rem;
+  }
+
+  .typing {
+    font-size: 18px;
+  }
+
   #counter {
     margin-top: 80%;
   }
@@ -591,14 +684,11 @@ input[type="checkbox"]:checked {
 
   .div1, .div2, .div3, footer {
     padding: 5%;
+    margin: 0;
   }
 
   .div1 img {
     padding: 0%;
-  }
-
-  .typing {
-    font-size: 18px;
   }
 
   input[type="checkbox"] {
@@ -617,13 +707,35 @@ input[type="checkbox"]:checked {
   }
 
   .overlay a {
-    font-size: 25px
+    font-size: 1.5rem;
   }
 
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .overlay-content {
+    text-align: left;
+    margin-left: 5%;
+    top: 1.2%;
+  }
+
+  .selected-pro {
+    display: none;
+  }
+
+  .select-text {
+    display: none;
+  }
+
+  #Ham-icon {
+    font-size: 1.2rem;
   }
 
   #span1 {
@@ -642,6 +754,11 @@ input[type="checkbox"]:checked {
     width: 35px;
     height: 35px;
     font-size: 1.2em;
+  }
+
+  .skill, .skill2, .skill3, .skill4 {
+    padding: .3rem;
+    font-size: 15px;
   }
 
   .skill-icon {
@@ -670,5 +787,21 @@ input[type="checkbox"]:checked {
 
   .pro-item {
     width: 98%;
+  }
+
+  .row {
+    margin: .8rem;
+  }
+
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column img:hover {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
   }
 }
