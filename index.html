@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet nofollow noopener"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet nofollow noopener" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+    rel="stylesheet nofollow noopener">
   <link rel="shortcut icon" href="images/logo1.webp" type="image/x-icon">
   <title>NaveenIsHere| Front-end Developer | Web Developer</title>
   <meta name="description"
@@ -24,34 +26,56 @@
 </head>
 
 <body>
+
   <button onclick="topFunction()" id="ScrollBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
   <!-- NAVIGATION BAR -->
   <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="close">&times;</a>
+    <div class="nav-logo">Naveen Das</div>
+
     <div class="overlay-content">
-      <a href="#home" onclick="closeNav()">Home</a>
-      <a href="#about" onclick="closeNav()">About</a>
-      <a href="#project" class="dropbtn" onclick="closeNav()">Projects</a>
-      <a href="#contact" onclick="closeNav()">Contact Me</a>
+      <a href="#home" onclick="closeNav()" aria-label="home">Home</a>
+      <a href="#about" onclick="closeNav()" aria-label="about">About</a>
+      <a href="#project" class="dropbtn" onclick="closeNav()" aria-label="project">Projects</a>
+      <a href="#contact" onclick="closeNav()" aria-label="contact">Contact Me</a>
     </div>
+
+    <div class="select-text">Some Of My UI Designs</div>
+    <div class="selected-pro">
+      <div class="selected-item">
+        <img src="images/mockup.webp" alt="mockup">
+      </div>
+      <div class="selected-item">
+        <img src="images/iphone mockup.webp" alt="mockup">
+      </div>
+      <div class="selected-item">
+        <img src="images/mindpeers-mock.webp" alt="mockup">
+      </div>
+      <div class="selected-item">
+        <img src="images/UI.webp" alt="mockup">
+      </div>
+    </div>
+
   </div>
   <nav>
     <span id="Ham-icon" onclick="openNav()">&#9776;</span>
   </nav>
 
   <!-- HEADER SECTION -->
-  <div class="header">
-    <div class="typing">
-      <h1>I'm <span>Naveen Das.</span></h1>
-    </div>
+  <div class="head-contain">
+    <div class="header">
+      <div class="typing">
+        <h1>I'm <span>Naveen Das.</span></h1>
+      </div>
 
-    <div class="typing">
-      <p>I'm a Front-End Web Developer.</p>
+      <div class="typing">
+        <p>I'm a Front-End Web Developer.</p>
+      </div>
     </div>
-  </div>
-  <div class="div1">
-    <img src="images/myimage.jpeg" alt="boy.jpg" onContextMenu="return false;" draggable="false">
+    <div class="div1">
+      <img src="images/myimage.jpeg" alt="boy.jpg" onContextMenu="return false;" draggable="false">
+    </div>
   </div>
 
   <!-- ABOUT SECTION -->
@@ -67,24 +91,30 @@
           something awesome.</strong></span></p>
 
     <div class="CV">
-      <a href="images/NAVEEN DAS RESUME.pdf" download>Curriculum vitae <i class="far fa-file-download"></i>
+      <a href="images/NAVEEN DAS RESUME.pdf" aria-label="cv" download>Curriculum vitae <i
+          class="far fa-file-download"></i>
       </a>
     </div>
 
-    <h2>My Skills</h2>
+    <h2><i class="fas fa-cogs"></i> My Skills</h2>
     <p>HTML</p>
     <div class="container">
-      <div class="skill html">70%</div>
+      <div class="skill html">85%</div>
     </div>
 
     <p>CSS</p>
     <div class="container">
-      <div class="skill2 css">60%</div>
+      <div class="skill2 css">70%</div>
     </div>
 
     <p>C++</p>
     <div class="container">
       <div class="skill3 c">40%</div>
+    </div>
+
+    <p>Sass</p>
+    <div class="container">
+      <div class="skill4 sass">50%</div>
     </div>
 
     <div class="skill-icon">
@@ -97,111 +127,144 @@
     </div>
     <br>
 
-    <h2>Certificates</h2>
-    <p id="cert-subhead">Click on the links below to see my certificates(All are verified Certificates).</p>
+    <h2><i class="fal fa-file-certificate"></i> Certificates</h2>
+    <p class="cert-subhead">Click on the links below to see my certificates(All are verified Certificates).</p>
     <hr>
 
     <div id="certificate">
-      <a href="https://www.sololearn.com/Certificate/1014-19655470/jpg/" target="_blank" title="Click Me"><i
-          class="fab fa-html5"></i> HTML</a>
-      <a href="https://naveenhere.github.io/images/image/certificate1.jpg" target="_blank" title="Click Me"><i
-          class="far fa-analytics"></i> Digital marketing</a>
-      <a href="https://www.sololearn.com/Certificate/1162-19655470/jpg/" target="_blank" title="Click Me"><i
-          class="far fa-phone-laptop"></i> Responsive Web
+      <a href="https://www.sololearn.com/Certificate/1014-19655470/jpg/" target="_blank" title="Click Me"
+        rel="noopener noreferrer nofollow"><i class="fab fa-html5"></i> HTML</a>
+      <a href="https://naveenhere.github.io/naveenishere/images/certificate1.webp" target="_blank" title="Click Me"
+        rel="noopener noreferrer nofollow"><i class="far fa-analytics"></i> Digital marketing</a>
+      <a href="https://www.sololearn.com/Certificate/1162-19655470/jpg/" target="_blank" title="Click Me"
+        rel="noopener noreferrer nofollow"><i class="far fa-phone-laptop"></i> Responsive Web
         Design</a>
-      <a href="https://www.sololearn.com/Certificate/1165-19655470/jpg/" target="_blank" title="Click Me"><i
-          class="fas fa-laptop-code"></i> Coding for
+      <a href="https://www.sololearn.com/Certificate/1165-19655470/jpg/" target="_blank" title="Click Me"
+        rel="noopener noreferrer nofollow"><i class="fas fa-laptop-code"></i> Coding for
         marketers</a>
       <a href="https://www.sololearn.com/certificates/course/en/19655470/1157/landscape/png" target="_blank"
-        title="Click Me"><i class="fab fa-python"></i> Python Beginners</a>
-      <a href="https://www.sololearn.com/Certificate/1023-19655470/jpg/" target="_blank" title="Click Me"><i
-          class="fab fa-css3-alt"></i> CSS</a>
+        title="Click Me" rel="noopener noreferrer nofollow"><i class="fab fa-python"></i> Python Beginners</a>
+      <a href="https://www.sololearn.com/Certificate/1023-19655470/jpg/" target="_blank" title="Click Me"
+        rel="noopener noreferrer nofollow"><i class="fab fa-css3-alt"></i> CSS</a>
     </div>
   </div>
 
   <!-- PROJECTS SECTION -->
   <div id="project" class="div3">
-    <h2>Projects</h2>
+    <h2><i class="fas fa-code"></i> Projects</h2>
+    <hr>
   </div>
 
   <div class="pro-container">
+    <div class="slide-track">
+      <div class="pro-item">
+        <img src="images/hotel.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">Hotel-Paradise</p>
+            <p>HTML / CSS</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenhere.github.io/Hotel-Paradise.com" target="_blank"
+              aria-label="Hotel-paradise" rel="noopener noreferrer nofollow">View Project
+              <i class="far fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="images/portfolio.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">Portfolio</p>
+            <p>HTML / CSS / JS</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenishere.me" target="_blank">View Project <i
+                class="far fa-arrow-right" aria-label="portfolio" rel="noopener noreferrer nofollow"></i></a></div>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="images/musicpage.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">LiveMusic.in</p>
+            <p>HTML / CSS / JS</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenhere.github.io/LiveMusic.in/" target="_blank"
+              aria-label="LiveMusic" rel="noopener noreferrer nofollow">View Project <i
+                class="far fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="images/fb.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">Facebook-LoginPage-Clone</p>
+            <p>HTML / CSS</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenhere.github.io/Facelook.github.io/" target="_blank"
+              aria-label="Facelook" rel="noopener noreferrer nofollow">View Project
+              <i class="far fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="images/card.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">Profile Card</p>
+            <p>HTML / CSS</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenhere.github.io/Card/" target="_blank" aria-label="Profile-card"
+              rel="noopener noreferrer nofollow">View Project <i class="far fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="images/view.webp" alt="Project.jpg">
+        <div class="pro-overlay">
+          <div class="pro-content">
+            <p class="pro-para">View My More Projects</p>
+          </div>
+          <div class="pro-button"><a href="https://naveenhere.github.io/Project-Page/" target="_blank"
+              aria-label="Project-page" rel="noopener noreferrer nofollow">View More
+              <i class="far fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div class="pro-item">
-      <img src="images/hotel.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">Hotel-Paradise</p>
-          <p>HTML / CSS</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/Hotel-Paradise.com" target="_blank">View Project
-            <i class="far fa-arrow-right"></i></a></div>
-      </div>
+  <!-- UI Design Section -->
+
+  <h2 class="div3"><i class="fas fa-pencil-ruler"></i> UI Designs</h2>
+  <div class="div3">Visit my Behance profile for more designs & my work <a href="https://www.behance.net/naveenishere/"
+      ref="nofollow noopener noreferer" class="CV">Behance</a>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images/mockup.webp" alt="ui-mockup">
+      <img src="images/Pokemon-mock.webp" alt="ui-mockup">
     </div>
-    <div class="pro-item">
-      <img src="images/portfolio.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">Portfolio</p>
-          <p>HTML / CSS / JS</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/NaveenIsHere.in/" target="_blank">View Project <i
-              class="far fa-arrow-right"></i></a></div>
-      </div>
+    <div class="column">
+      <img src="images/mindpeers-mock.webp" alt="ui-mockup">
+      <img src="images/squid mock.webp" alt="ui-mockup">
     </div>
-    <div class="pro-item">
-      <img src="images/musicpage.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">LiveMusic.in</p>
-          <p>HTML / CSS / JS</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/LiveMusic.in/" target="_blank">View Project <i
-              class="far fa-arrow-right"></i></a></div>
-      </div>
+    <div class="column">
+      <img src="images/filmreview.webp" alt="ui-mockup">
+      <img src="images/iphone mockup.webp" alt="ui-mockup">
     </div>
-    <div class="pro-item">
-      <img src="images/fb.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">Facebook-LoginPage-Clone</p>
-          <p>HTML / CSS</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/Facelook.github.io/" target="_blank">View Project
-            <i class="far fa-arrow-right"></i></a></div>
-      </div>
+    <div class="column">
+      <img src="images/gaming-gear-mock.webp" alt="ui-mockup">
     </div>
-    <div class="pro-item">
-      <img src="images/card.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">Profile Card</p>
-          <p>HTML / CSS</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/Card/" target="_blank">View Project <i
-              class="far fa-arrow-right"></i></a></div>
-      </div>
-    </div>
-    <div class="pro-item">
-      <img src="images/view.webp" alt="Project.jpg">
-      <div class="pro-overlay">
-        <div class="pro-content">
-          <p class="pro-para">View My More Projects</p>
-        </div>
-        <div class="pro-button"><a href="https://naveenhere.github.io/Project-Page/" target="_blank">View More
-            <i class="far fa-arrow-right"></i></a></div>
-      </div>
+    <div class="column">
+      <img src="images/UI.webp" alt="ui-mockup">
     </div>
   </div>
 
   <!-- CONTACT SECTION -->
   <div id="contact" class="div2">
-    <h2>Contact Me</h2>
+    <h2><i class="fas fa-phone-square-alt"></i> Contact Me</h2>
     <hr>
 
     <div>
-      <p><i class="fas fa-map-marker-alt"></i>Uttar Pradesh, INDIA</p>
+      <p><i class="fas fa-map-marker-alt"></i> Uttar Pradesh, INDIA</p>
       <p><i class="fa fa-phone"></i> Phone: +91 8448953175</p>
-      <p><i class="fa fa-envelope"> </i> Email: Anonymousvillian@protonmail.com</p>
+      <p><i class="fa fa-envelope"> </i> Email: naveendas8900@gmail.com</p>
     </div>
     <br>
     <p>Let's get in touch. Send me a message:</p>
@@ -222,12 +285,15 @@
   <!-- Footer section -->
   <footer>
     <ul>
-      <li><a href="https://www.linkedin.com/in/naveen-das-2094321a0" target="_blank"><i
-            class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="https://instagram.com/here_is_naveen_?utm_medium=copy_link" target="_blank"><i
-            class="fab fa-instagram"></i></a></li>
-      <li><a href="https://github.com/NaveenHere" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/naveen-das-2094321a0" target="_blank" aria-label="LinkedIn"
+          rel="noopener noreferrer nofollow"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://instagram.com/here_is_naveen_?utm_medium=copy_link" target="_blank" aria-label="Instagram"
+          rel="noopener noreferrer nofollow"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://github.com/NaveenHere" target="_blank" aria-label="Github"
+          rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.behance.net/naveenishere/" target="_blank" aria-label="Behance"
+          rel="noopener noreferrer nofollow"><i class="fab fa-behance-square"></i></a></li>
+      <!-- <li><a href="#"><i class="fab fa-codepen" aria-label="CodePen" rel="noopener noreferrer nofollow"></i></a></li> -->
     </ul>
 
     <div id="copy">
@@ -235,7 +301,6 @@
     </div>
 
   </footer>
-  <input type="checkbox" onclick="myFunction()">
 
   <script src="main.js"></script>
 </body>
