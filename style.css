@@ -788,6 +788,20 @@ footer>ul li a:hover::before {
   .pro-item {
     width: 98%;
   }
+  
+  .slide-track {
+    width: calc(210px * 18);
+  }
+  
+  @keyframes autoscroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-210px * 9));
+    }
+  }
 
   .row {
     margin: .8rem;
