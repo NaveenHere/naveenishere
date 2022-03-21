@@ -72,11 +72,11 @@ nav {
 /* Scroll Button */
 #ScrollBtn {
   display: none;
-  position: sticky;
+  position: fixed;
   bottom: 30px;
   right: 30px;
   float: right;
-  z-index: 40;
+  z-index: 20;
   font-size: 1rem;
   border: none;
   outline: none;
