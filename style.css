@@ -73,7 +73,7 @@ nav {
 #ScrollBtn {
   display: none;
   position: fixed;
-  top: 680px;
+  bottom: 30px;
   right: 30px;
   float: right;
   font-size: 1rem;
@@ -681,7 +681,7 @@ footer>ul li a:hover::before {
   }
 
   #ScrollBtn {
-    top: 580px;
+    bottom: 20px;
     right: 20px;
   }
 
