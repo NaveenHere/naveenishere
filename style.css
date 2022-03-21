@@ -14,7 +14,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: url("images/darkwall.webp");
   color: #fff;
-  backdrop-filter: blur(4px);
   font-weight: 600;
   user-select: none;
 }
@@ -35,7 +34,7 @@ body {
 }
 
 .typing {
-  width: 30ch;
+  width: 35ch;
   animation: type 2s steps(38), blink 2s step-start infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -69,6 +68,29 @@ nav {
   padding: 5px;
 }
 
+/* Scroll Button */
+#ScrollBtn {
+  display: none;
+  position: sticky;
+  top: 680px;
+  right: 30px;
+  float: right;
+  z-index: 10;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 128, 128, 0.637);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+#ScrollBtn:hover {
+  background-color: turquoise;
+  box-shadow: 0px 0px 5px turquoise;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -83,7 +105,7 @@ nav {
 
 .overlay-content {
   position: relative;
-  top: 2%;
+  top: 10%;
   width: 100%;
   text-align: left;
   margin-top: 30px;
@@ -502,8 +524,7 @@ button:hover {
 footer {
   padding: 2% 10%;
   margin-top: 8%;
-  background-color: black;
-  opacity: 0.8;
+  background-color: #040303;
 }
 
 footer>ul {
@@ -564,10 +585,13 @@ footer>ul li a:hover::before {
 #copy {
   color: #ffffff;
   text-align: center;
+  text-shadow: 0px 0px 5px #000;
 }
 
 #copy span {
   color: turquoise;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
 }
 
 .CV {
@@ -658,6 +682,11 @@ footer>ul li a:hover::before {
     margin-top: 80%;
   }
 
+  #ScrollBtn {
+    top: 580px;
+    right: 20px;
+  }
+
   .div1, .div2, .div3, footer {
     padding: 5%;
     margin: 0;
@@ -699,7 +728,7 @@ footer>ul li a:hover::before {
   .overlay-content {
     text-align: left;
     margin-left: 5%;
-    top: 1.2%;
+    top: 5%;
   }
 
   .selected-pro {
