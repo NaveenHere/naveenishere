@@ -1,6 +1,9 @@
-// Hamburger section
+// AOS Animation
+AOS.init();
+
+// Hamburger Section
 function openNav() {
-  document.getElementById("myNav").style.width = "50%";
+  document.getElementById("myNav").style.width = "100%";
 }
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
