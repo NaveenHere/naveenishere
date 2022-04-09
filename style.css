@@ -6,59 +6,23 @@ html {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: url("images/darkwall.webp");
+  background-color: #000;
   color: #fff;
   font-weight: 600;
   user-select: none;
 }
 
-/* Heading section */
-
-.head-contain {
-  margin-top: 3.5rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.typing {
-  width: 35ch;
-  animation: type 2s steps(38), blink 2s step-start infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  text-shadow: 0 5px 10px #000;
-}
-
-.typing h1, p {
-  margin: 1rem;
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  100% {
-    border-color: transparent;
-  }
-}
-
-#about {
-  padding-top: 6%;
+p {
+  margin: 1rem 0;
 }
 
 /* Navigation Bar and hamburger*/
@@ -68,27 +32,29 @@ nav {
   padding: 5px;
 }
 
-/* Scroll Button */
-#ScrollBtn {
-  display: none;
-  position: sticky;
-  top: 680px;
-  right: 30px;
-  float: right;
-  z-index: 10;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 128, 128, 0.637);
-  color: white;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 50%;
+.nav-logo {
+  display: inline;
+  position: absolute;
+  top: 48px;
+  left: 42px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  animation: nav-logo 3s infinite ease;
 }
 
-#ScrollBtn:hover {
-  background-color: turquoise;
-  box-shadow: 0px 0px 5px turquoise;
+@keyframes nav-logo {
+  0%, 100% {
+    color: tan;
+  }
+
+  25% {
+    color: turquoise;
+  }
+
+  50% {
+    color: palevioletred;
+  }
 }
 
 .overlay {
@@ -113,9 +79,9 @@ nav {
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 20px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2.8rem;
   color: grey;
   display: block;
   transition: .3s;
@@ -149,46 +115,6 @@ nav {
   font-size: 60px;
 }
 
-.nav-logo {
-  position: absolute;
-  top: 48px;
-  left: 42px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
-  text-shadow: 0 0px 10px #000;
-}
-
-.select-text {
-  margin: 12rem 0rem 0rem 2.5rem;
-}
-
-.selected-pro {
-  width: 90%;
-  display: flex;
-  overflow-x: auto;
-  margin: 0rem 0rem 0rem 2.2rem;
-}
-
-.selected-pro::-webkit-scrollbar {
-  display: none;
-}
-
-.selected-item {
-  width: 30%;
-  height: auto;
-  flex-shrink: 0;
-  margin: 1rem .5rem 1rem .5rem;
-  border-radius: 8px;
-}
-
-.selected-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  box-shadow: 0px 0px 8px 4px #000;
-}
-
 #Ham-icon {
   font-size: 1.8rem;
   cursor: pointer;
@@ -198,39 +124,159 @@ nav {
   border-image-slice: 1;
 }
 
-/* Image section */
+/* Header Section */
+#main {
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
+}
 
-.div1 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0% 10%;
+.header-content {
   width: 50%;
 }
 
-h2 {
-  font-size: 2rem;
-  text-shadow: 0px 0px 10px #000;
+.header {
+  position: absolute;
+  top: 40%;
+  left: 2rem
 }
 
-/* My skills section */
-
-.div1 {
-  text-align: justify;
-  padding: 0% 10%;
+.typing {
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
 }
 
-#about-me, #cert-subhead {
+#highlight {
+  color: turquoise;
+  font-weight: 900 !important;
+}
+
+/* CV Button */
+.CV {
+  margin: 2rem 0rem;
+}
+
+.CV a {
+  text-decoration: none;
+  background-color: turquoise;
+  border: 2px solid turquoise;
+  color: black;
+  padding: .6rem;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.CV a:hover {
+  background-color: transparent;
+  color: turquoise;
+  box-shadow: 0px 0px 10px turquoise;
+}
+
+#hire {
+  margin: 0 1rem 0 1rem;
+}
+
+#vid-button {
+  border-radius: 50%;
+  padding: .8rem;
+  font-size: 1.2rem;
+}
+
+.img-contain {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-contain>img {
+  width: 90%;
+}
+
+/* Scroll Button */
+#ScrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  float: right;
+  z-index: 20;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 128, 128, 0.637);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+#ScrollBtn:hover {
+  background-color: turquoise;
+  box-shadow: 0px 0px 5px turquoise;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.about-content {
+  width: 50%;
+  padding: 2rem 4rem;
+}
+
+#about-me {
+  position: relative;
+  top: 2%;
   line-height: 30px;
+  text-align: justify;
 }
 
 #let {
   color: turquoise;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
-.container {
+.about-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.skill-icon {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon i {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Skills Section */
+
+.my-skills {
+  padding: 0 5%;
+  height: 100%;
+}
+
+.skills-container {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -240,7 +286,7 @@ h2 {
   border-radius: 50px;
 }
 
-.skill, .skill2, .skill3, .skill4 {
+.skill, .skill2, .skill3, .skill4, .skill5 {
   background: linear-gradient(to right, turquoise, tan, palevioletred);
   padding: .5rem;
   text-align: right;
@@ -261,6 +307,10 @@ h2 {
 
 .skill4 {
   animation-name: sass;
+}
+
+.skill5 {
+  animation-name: js;
 }
 
 .html {
@@ -319,6 +369,20 @@ h2 {
   }
 }
 
+.js {
+  width: 20%;
+}
+
+@keyframes js {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+
 #certificate {
   margin: 2rem 0 2rem 0;
   display: flex;
@@ -328,7 +392,7 @@ h2 {
 #certificate a {
   color: #fff;
   text-align: center;
-  font-size: large;
+  font-size: 1.2rem;
   padding: .5rem;
   margin: .3rem;
   text-decoration: none;
@@ -342,13 +406,17 @@ h2 {
   box-shadow: 0px 0px 10px turquoise;
 }
 
-/* Projects section */
+/* Projects Section */
+
+#project {
+  height: 100%;
+  padding: 0 5%;
+}
 
 .pro-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   overflow-x: auto;
-  margin: 0rem 0rem 2rem 9.5rem;
   background: transparent;
 }
 
@@ -457,14 +525,13 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0rem 0rem 2rem 9.5rem;
 }
 
 .column {
   -ms-flex: 25%;
   flex: 25%;
-  max-width: 18%;
-  padding: .5rem .5rem;
+  max-width: 20%;
+  padding: .5rem;
 }
 
 .column img {
@@ -486,16 +553,37 @@ h2 {
   display: none;
 }
 
-/* Contact me section */
-
-.div2, .div3 {
-  padding: 1% 10% 0;
+#be-link {
+  text-decoration: none;
+  color: turquoise;
+  font-size: 1.2rem;
 }
 
-.ani>h3 {
-  font-size: x-large;
-  color: turquoise;
-  text-shadow: none;
+#be-link:hover {
+  text-shadow: 0px 0px 10px turquoise;
+}
+
+/* Contact Section */
+
+#contact {
+  display: flex;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.contact-content {
+  width: 50%;
+}
+
+.contact-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img>img {
+  width: 80%;
 }
 
 input[type="text"], input[type="email"] {
@@ -519,12 +607,12 @@ button:hover {
   color: turquoise;
 }
 
-/* Footer section */
+/* Footer Section */
 
 footer {
   padding: 2% 10%;
-  margin-top: 8%;
-  background-color: #040303;
+  margin-top: 2%;
+  background: #232931;
 }
 
 footer>ul {
@@ -594,121 +682,13 @@ footer>ul li a:hover::before {
   font-size: 1.4rem;
 }
 
-.CV {
-  margin: 2rem 0 5rem 0;
-}
-
-.CV a {
-  text-decoration: none;
-  background-color: turquoise;
-  border: 2px solid turquoise;
-  color: black;
-  padding: .4rem;
-  margin-top: .4rem;
-  border-radius: 10px;
-  transition: .3s;
-  padding: .6rem;
-}
-
-.CV a:hover {
-  background-color: transparent;
-  color: turquoise;
-  box-shadow: 0px 0px 10px turquoise;
-}
-
-.skill-icon {
-  margin: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-icon i {
-  font-size: 2.8rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  padding: 2rem;
-  margin: 2rem;
-  animation: glow 3s infinite ease;
-  background: rgba(255, 255, 255, 0.137);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-@keyframes glow {
-  0%, 100% {
-    color: violet;
-    text-shadow: 0px 0px 10px violet;
-  }
-
-  25% {
-    color: turquoise;
-    text-shadow: 0px 0px 10px turquoise;
-  }
-
-  50% {
-    color: palevioletred;
-    text-shadow: 0px 0px 10px palevioletred;
-  }
-}
-
-.div3 a {
-  color: gray;
-  font-size: 1.2rem;
-}
-
-.div3 a:hover {
-  color: turquoise;
-  text-shadow: 0px 0px 10px turquoise;
-}
-
-/* Media queries section */
+/* Media Queries Section */
 
 @media screen and (max-width: 480px) {
-
-  .typing h1, p {
-    margin: .6rem;
-  }
-
-  .typing {
-    font-size: 18px;
-  }
-
-  #counter {
-    margin-top: 80%;
-  }
-
-  #ScrollBtn {
-    top: 580px;
-    right: 20px;
-  }
-
-  .div1, .div2, .div3, footer {
-    padding: 5%;
-    margin: 0;
-  }
-
-  .div1 img {
-    padding: 0%;
-  }
-
-  input[type="checkbox"] {
-    top: 11px;
-    width: 45px;
-    height: 25px;
-  }
-
-  input[type="checkbox"]::before {
-    width: 20px;
-    height: 20px;
-  }
-
-  input[type="checkbox"]:checked:before {
-    transform: translateX(20px);
+  
+  /* Nav Bar Section */
+  .nav-logo {
+    display: none;
   }
 
   .overlay a {
@@ -731,49 +711,86 @@ footer>ul li a:hover::before {
     top: 5%;
   }
 
-  .selected-pro {
-    display: none;
-  }
-
-  .select-text {
-    display: none;
-  }
-
   #Ham-icon {
     font-size: 1.2rem;
   }
 
-  #span1 {
-    display: none;
+  /* Header Section */
+  #main {
+    flex-direction: column-reverse;
+  }
+  
+  .header-content {
+    width: 100%;
+  }
+
+  .header {
+    top: 8%;
+    left: 4%;
+  }
+
+  .typing{
+    font-size: 2rem;
+  }
+
+  .typing >p{
+    font-size: 1rem;
+  }
+
+  .CV {
+    margin: .8rem 0rem;
   }
 
   .CV a {
-    font-size: 15px;
+    padding: .3rem;
+    font-size: .8rem !important;
+    border-radius: 8px;
   }
 
-  footer>ul {
-    padding: 0;
+  #vid-button {
+    padding: .5rem;
+    font-size: .5rem;
   }
 
-  footer>ul li a {
-    width: 35px;
-    height: 35px;
-    font-size: 1.2em;
+  .img-contain {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .img-contain>img {
+    width: 100%;
   }
 
-  .skill, .skill2, .skill3, .skill4 {
+  #ScrollBtn {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  /* About Section */
+  #about{
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .about-content {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .about-img {
+    width: 100%;
+  }
+  
+  .skill-icon i {
+    font-size: 1.8rem;
+    padding: .4rem;
+    margin: .4rem;
+  }
+
+  /* Skills Section */
+  .skill, .skill2, .skill3, .skill4, .skill5 {
     padding: .3rem;
     font-size: 15px;
-  }
-
-  .skill-icon {
-    margin: 2rem;
-  }
-
-  .skill-icon i {
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin: .2rem;
   }
 
   #certificate {
@@ -785,6 +802,7 @@ footer>ul li a:hover::before {
     display: inline-block;
   }
 
+  /* Project Section */
   .pro-container {
     width: 98%;
     margin: 0rem;
@@ -813,7 +831,7 @@ footer>ul li a:hover::before {
   }
 
   .row_toggle {
-    height: 377vw;
+    height: 424vw;
     overflow: hidden;
   }
 
@@ -839,4 +857,47 @@ footer>ul li a:hover::before {
     -webkit-transform: none;
     transform: none;
   }
+
+  /* Contact Section */
+
+  .contact-content{
+    width: 100%;
+  } 
+
+  .contact-img{
+    display: none;
+  }
+  
+  input[type="checkbox"] {
+    top: 11px;
+    width: 45px;
+    height: 25px;
+  }
+
+  input[type="checkbox"]::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="checkbox"]:checked:before {
+    transform: translateX(20px);
+  }
+
+
+   /* Footer Section */
+   footer {
+    padding: 5%;
+    margin: 0;
+  }
+
+  footer>ul {
+    padding: 0;
+  }
+
+  footer>ul li a {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+  }
+
 }
