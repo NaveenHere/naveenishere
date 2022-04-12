@@ -293,9 +293,9 @@ nav {
 
 .skill, .skill2, .skill3, .skill4, .skill5 {
   background: linear-gradient(to right, turquoise, tan, palevioletred);
-  padding: .5rem;
+  padding: .2rem;
   text-align: right;
-  font-size: 20px;
+  font-size: 1.2rem;
   border-radius: 50px;
   margin: .2rem;
   animation-name: html;
