@@ -1,345 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet nofollow noopener"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet nofollow noopener"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet nofollow noopener"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet nofollow noopener"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet nofollow noopener" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-    rel="stylesheet nofollow noopener">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo1.webp" type="image/x-icon" />
+    <title>NaveenIsHere| Front-end Developer | Web Developer</title>
+    <meta
+      name="description"
+      content="NaveenIsHere, a frontend Web Developer with skills of Responsive Websites designing, HTML, CSS, SASS, Basic JavaScript, Digital Marketing"
+    />
+    <meta name="author" content="Naveen Das" />
+    <meta
+      property="og:title"
+      content="Naveen Das: A Front-end Web Developer - Uttar Pradesh, India"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Naveen Das, a self taught Front-end Web Developer with skills of Responsive Website designing,HTML, CSS, SASS, Basic JavaScript, Digital Marketing"
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="images/portfolio.webp"
+    />
+    <meta
+      property="og:site_name"
+      content="Front-End Developer, Uttar Pradesh India. NaveenIsHere"
+    />
+    <meta
+      property="og:url"
+      content="https://naveenhere.github.io/NaveenIsHere.in/"
+    />
+  </head>
 
-  <link rel="shortcut icon" href="images/logo1.webp" type="image/x-icon">
-  <title>NaveenIsHere| Front-end Developer | Web Developer</title>
-  <meta name="description"
-    content="NaveenIsHere, a frontend Web Developer with skills of Responsive Websites designing, HTML, CSS, SASS, Basic JavaScript, Digital Marketing">
-  <meta name="author" content="Naveen Das">
-  <meta property="og:title" content="Naveen Das: A Front-end Web Developer - Uttar Pradesh, India">
-  <meta property="og:type" content="website">
-  <meta property="og:description"
-    content="Naveen Das, a self taught Front-end Web Developer with skills of Responsive Website designing,HTML, CSS, SASS, Basic JavaScript, Digital Marketing">
-  <meta property="og:image" itemprop="image" content="images/portfolio.webp">
-  <meta property="og:site_name" content="Front-End Developer, Uttar Pradesh India. NaveenIsHere" />
-  <meta property="og:url" content="https://naveenhere.github.io/NaveenIsHere.in/" />
-</head>
+  <body>
+    <!-- ScrolltoTop Button -->
+    <button onclick="topFunction()" id="ScrollBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<body>
-  <!-- ScrolltoTop Button -->
-  <button onclick="topFunction()" id="ScrollBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- NAVIGATION BAR -->
+    <div id="myNav" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        aria-label="close"
+        >&times;</a
+      >
+      <div class="nav-logo">Naveen Das</div>
 
-  <!-- NAVIGATION BAR -->
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="close">&times;</a>
-    <div class="nav-logo">Naveen Das</div>
-
-    <div class="overlay-content">
-      <a href="#home" onclick="closeNav()" aria-label="home">Home</a>
-      <a href="#about" onclick="closeNav()" aria-label="about">About</a>
-      <a href="#project" class="dropbtn" onclick="closeNav()" aria-label="project">Projects</a>
-      <a href="#contact" onclick="closeNav()" aria-label="contact">Contact Me</a>
-    </div>
-  </div>
-  <nav>
-    <span id="Ham-icon" onclick="openNav()">&#9776;</span>
-  </nav>
-
-  <!-- MAIN HEADER SECTION -->
-  <main id="main">
-    <section class="header-content">
-      <div class="header">
-        <div class="typing">
-          <h1>Hello, I'm <span id="highlight">Naveen Das.</span></h1>
-        </div>
-
-        <div class="typing">
-          <p>A Front-End Web Dev & UI Designer.</p>
-        </div>
-
-        <div class="CV">
-
-          <a href="images/NAVEEN DAS RESUME.pdf" aria-label="cv" download>Curriculum vitae <i
-              class="far fa-file-download"></i>
-          </a>
-
-          <a href="mailto: naveendas8900@gmail.com" aria-label="hire me" id="hire">Hire Me <i class="fa-solid fa-user"></i></a>
-
-          <!-- <a href="images/Profile.mp4" aria-label="video" id="vid-button" target="_blank" loading="lazy"><i class="fa-solid fa-play" title="Click to play"></i></a> -->
-
-        </div>
-
+      <div class="overlay-content">
+        <a href="#home" onclick="closeNav()" aria-label="home">Home</a>
+        <a href="#about" onclick="closeNav()" aria-label="about">About</a>
+        <a
+          href="#project"
+          class="dropbtn"
+          onclick="closeNav()"
+          aria-label="project"
+          >Projects</a
+        >
+        <a href="#contact" onclick="closeNav()" aria-label="contact"
+          >Contact Me</a
+        >
       </div>
-    </section>
-
-    <!-- Image Container -->
-    <section class="img-contain" data-aos="fade-down" data-aos-duration="2000">
-      <img src="images/men1.webp" alt="programming boy">
-    </section>
-  </main>
-
-  <!-- ABOUT SECTION -->
-
-  <section id="about">
-
-    <!--About Image Container -->
-    <div class="about-img" data-aos="fade-right" data-aos-duration="2000">
-      <img src="images/image.webp" alt="programming boy">
     </div>
+    <nav>
+      <span id="Ham-icon" onclick="openNav()">&#9776;</span>
+    </nav>
 
-    <!-- About Section Content -->
-    <div class="about-content">
-      <div class="headings">About Me</div>
-      <hr>
-      <p id="about-me">Hello there, I am Naveen Das, a <b>"Front-end Web Dev & UI Designer"</b>. I was born in Uttar Pradesh,
-        India. I am
-        currently pursuing Bachelor's of Computer Application (BCA) from CCS University,
-        Meerut. From my school days i love drawing and designing. So, I found my passion in "Frontend Web Development & UI Designing. By the help of web designing I can turn my ideas and imaginations from paper to web.<br><span id="let"><strong>Let's create something awesome.</strong></span></p>
+    <!-- MAIN HEADER SECTION -->
+    <main id="main">
+      <section class="header-content">
+        <div class="header">
+          <div class="typing">
+            <h1>Hello, I'm <span id="highlight">Naveen Das.</span></h1>
+          </div>
 
-      <div class="skill-icon">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-sass"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-git-alt"></i>
-        <i class="fab fa-figma"></i>
-      </div>
+          <div class="typing">
+            <p>A Front-End Web Dev & UI Designer.</p>
+          </div>
 
-    </div>
+          <div class="CV">
+            <a href="images/NAVEEN DAS RESUME.pdf" aria-label="cv" download
+              >Curriculum vitae <i class="far fa-file-download"></i>
+            </a>
 
-  </section>
+            <a
+              href="mailto: naveendas8900@gmail.com"
+              aria-label="hire me"
+              id="hire"
+              >Hire Me <i class="fa-solid fa-user"></i
+            ></a>
 
-  <!-- SKILLS CONTAINER -->
-  <div class="my-skills">
-
-    <!-- Skills Section -->
-    <div class="headings"><i class="fas fa-cogs"></i> My Skills</div>
-    <hr>
-    <p>HTML</p>
-    <div class="skills-container">
-      <div class="skill html">85%</div>
-    </div>
-
-    <p>CSS</p>
-    <div class="skills-container">
-      <div class="skill2 css">70%</div>
-    </div>
-
-    <p>C++</p>
-    <div class="skills-container">
-      <div class="skill3 c">40%</div>
-    </div>
-
-    <p>Sass</p>
-    <div class="skills-container">
-      <div class="skill4 sass">50%</div>
-    </div>
-
-    <p>JavaScript</p>
-    <div class="skills-container">
-      <div class="skill5 js">20%</div>
-    </div>
-
-    <div class="headings"><i class="fal fa-file-certificate"></i> Certificates</div>
-    <p class="cert-subhead">Click on the links below to see my certificates(All are verified Certificates).</p>
-    <hr>
-
-    <!-- Certificates Section -->
-    <div id="certificate">
-      <a href="https://www.sololearn.com/Certificate/1014-19655470/jpg/" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="fab fa-html5"></i> HTML</a>
-      <a href="https://www.sololearn.com/Certificate/1023-19655470/jpg/" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="fab fa-css3-alt"></i> CSS</a>
-      <a href="https://coursera.org/share/de0d24b790d7834665848fa28f239c35" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="fas fa-pencil-ruler"></i> UX Designing (Google)</a>
-      <a href="https://naveenhere.github.io/naveenishere/images/certificate1.webp" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="far fa-analytics"></i> Digital marketing (Google)</a>
-      <a href="https://www.freecodecamp.org/certification/Naveen-Das/responsive-web-design" target="_blank"
-        title="Click Me" rel="noopener noreferrer nofollow"><i class="far fa-phone-laptop"></i>
-        R.W.D.(freecodecamp)</a>
-      <a href="https://www.sololearn.com/Certificate/1165-19655470/jpg/" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="fas fa-laptop-code"></i> Coding for
-        marketers</a>
-      <a href="https://www.sololearn.com/Certificate/1162-19655470/jpg/" target="_blank" title="Click Me"
-        rel="noopener noreferrer nofollow"><i class="far fa-phone-laptop"></i> Responsive Web
-        Design</a>
-      <a href="https://www.sololearn.com/certificates/course/en/19655470/1157/landscape/png" target="_blank"
-        title="Click Me" rel="noopener noreferrer nofollow"><i class="fab fa-python"></i> Python Beginners</a>
-    </div>
-
-  </div>
-
-  <!-- PROJECTS SECTION -->
-
-  <section id="project">
-
-    <div class="headings"><i class="fas fa-code"></i> Projects</div>
-    <hr>
-    <div class="pro-container">
-      <div class="slide-track">
-        <div class="pro-item">
-          <img src="images/hotel.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">Hotel-Paradise</p>
-              <p>HTML / CSS</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenhere.github.io/Hotel-Paradise.com" target="_blank"
-                aria-label="Hotel-paradise" rel="noopener noreferrer nofollow">View Project
-                <i class="far fa-arrow-right"></i></a></div>
+            <!-- <a href="images/Profile.mp4" aria-label="video" id="vid-button" target="_blank" loading="lazy"><i class="fa-solid fa-play" title="Click to play"></i></a> -->
           </div>
         </div>
-        <div class="pro-item">
-          <img src="images/portfolio.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">Portfolio</p>
-              <p>HTML / CSS / JS</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenishere.me" target="_blank">View Project <i
-                  class="far fa-arrow-right" aria-label="portfolio" rel="noopener noreferrer nofollow"></i></a></div>
-          </div>
-        </div>
-        <div class="pro-item">
-          <img src="images/musicpage.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">LiveMusic.in</p>
-              <p>HTML / CSS / JS</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenhere.github.io/LiveMusic.in/" target="_blank"
-                aria-label="LiveMusic" rel="noopener noreferrer nofollow">View Project <i
-                  class="far fa-arrow-right"></i></a></div>
-          </div>
-        </div>
-        <div class="pro-item">
-          <img src="images/fb.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">Facebook-LoginPage-Clone</p>
-              <p>HTML / CSS</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenhere.github.io/Facelook/" target="_blank"
-                aria-label="Facelook" rel="noopener noreferrer nofollow">View Project
-                <i class="far fa-arrow-right"></i></a></div>
-          </div>
-        </div>
-        <div class="pro-item">
-          <img src="images/card.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">Profile Card</p>
-              <p>HTML / CSS</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenhere.github.io/Card/" target="_blank"
-                aria-label="Profile-card" rel="noopener noreferrer nofollow">View Project <i
-                  class="far fa-arrow-right"></i></a></div>
-          </div>
-        </div>
-        <div class="pro-item">
-          <img src="images/view.webp" alt="Project.jpg">
-          <div class="pro-overlay">
-            <div class="pro-content">
-              <p class="pro-para">View My More Projects</p>
-            </div>
-            <div class="pro-button"><a href="https://naveenhere.github.io/Project-Page/" target="_blank"
-                aria-label="Project-page" rel="noopener noreferrer nofollow">View More
-                <i class="far fa-arrow-right"></i></a></div>
-          </div>
-        </div>
+      </section>
+
+      <!-- Image Container -->
+      <section
+        class="img-contain"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        <img src="images/men1.webp" alt="programming boy" />
+      </section>
+    </main>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <!--About Image Container -->
+      <div class="about-img" data-aos="fade-right" data-aos-duration="2000">
+        <img src="images/image.webp" alt="programming boy" />
       </div>
-    </div>
 
-    <!-- UI DESIGN SECTION -->
-
-    <div class="headings"><i class="fas fa-pencil-ruler"></i> UI Designs</div>
-    <div>Visit my Behance profile for more designs & my work <a href="https://www.behance.net/naveenishere/"
-        id="be-link" ref="nofollow noopener noreferer" target="_blank" title="Click to visit">Behance</a>
-    </div>
-    <div class="row row_toggle">
-      <div class="column">
-        <img src="images/mockup.webp" alt="ui-mockup">
-        <img src="images/UI.webp" alt="ui-mockup">
-      </div>
-      <div class="column">
-        <img src="images/mindpeers-mock.webp" alt="ui-mockup">
-        <img src="images/arena.webp" alt="ui-mockup">
-      </div>
-      <div class="column">
-        <img src="images/landingpage.webp" alt="ui-mockup">
-        <img src="images/iphone mockup.webp" alt="ui-mockup">
-      </div>
-      <div class="column">
-        <img src="images/gaming-gear-mock.webp" alt="ui-mockup">
-        <img src="images/iso-mockup.webp" alt="ui-mockup">
-      </div>
-      <div class="column">
-        <img src="images/CCC.webp" alt="ui-mockup">
-      </div>
-    </div>
-    <div id="toggle_see">See More Designs <i class="fas fa-chevron-down"></i></div>
-
-  </section>
-
-  <!-- CONTACT SECTION -->
-
-  <section id="contact">
-
-    <div class="contact-content">
-      <div class="headings"><i class="fas fa-phone-square-alt"></i> Contact Me</div>
-      <hr>
-
-      <div>
-        <p><i class="fas fa-map-marker-alt"></i> Uttar Pradesh, INDIA</p>
-        <p><i class="fa fa-phone"></i> Phone: +91 8448953175</p>
-        <p><i class="fa fa-envelope"> </i> Email: naveendas8900@gmail.com</p>
-      </div>
-      <br>
-      <p>Let's get in touch. Send me a message:</p>
-
-      <form action="" target="_blank">
-        <p><input type="text" placeholder="Name" required name="Name"></p>
-        <p><input type="email" placeholder="Email" required name="Email"></p>
-        <p><input type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
+      <!-- About Section Content -->
+      <div class="about-content">
+        <div class="headings">About Me</div>
+        <hr />
+        <p id="about-me">
+          Hello there, I am Naveen Das, a
+          <b>"Front-end Web Dev & UI Designer"</b>. I was born in Uttar Pradesh,
+          India. I am currently pursuing Bachelor's of Computer Application
+          (BCA) from CCS University, Meerut. From my school days i love drawing
+          and designing. So, I found my passion in "Frontend Web Development &
+          UI Designing. By the help of web designing I can turn my ideas and
+          imaginations from paper to web.<br /><span id="let"
+            ><strong>Let's create something awesome.</strong></span
+          >
         </p>
-      </form>
+
+        <div class="skill-icon">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-git-alt"></i>
+          <i class="fab fa-figma"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS CONTAINER -->
+    <div class="my-skills">
+      <!-- Skills Section -->
+      <div class="headings"><i class="fas fa-cogs"></i> My Skills</div>
+      <hr />
+      <p>HTML</p>
+      <div class="skills-container">
+        <div class="skill html">85%</div>
+      </div>
+
+      <p>CSS</p>
+      <div class="skills-container">
+        <div class="skill2 css">70%</div>
+      </div>
+
+      <p>C++</p>
+      <div class="skills-container">
+        <div class="skill3 c">40%</div>
+      </div>
+
+      <p>Sass</p>
+      <div class="skills-container">
+        <div class="skill4 sass">50%</div>
+      </div>
+
+      <p>JavaScript</p>
+      <div class="skills-container">
+        <div class="skill5 js">20%</div>
+      </div>
+
+      <div class="headings">
+        <i class="fal fa-file-certificate"></i> Certificates
+      </div>
+      <p class="cert-subhead">
+        Click on the links below to see my certificates(All are verified
+        Certificates).
+      </p>
+      <hr />
+
+      <!-- Certificates Section -->
+      <div id="certificate">
+        <a
+          href="https://www.sololearn.com/Certificate/1014-19655470/jpg/"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="fab fa-html5"></i> HTML</a
+        >
+        <a
+          href="https://www.sololearn.com/Certificate/1023-19655470/jpg/"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="fab fa-css3-alt"></i> CSS</a
+        >
+        <a
+          href="https://coursera.org/share/de0d24b790d7834665848fa28f239c35"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="fas fa-pencil-ruler"></i> UX Designing (Google)</a
+        >
+        <a
+          href="https://naveenhere.github.io/naveenishere/images/certificate1.webp"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="far fa-analytics"></i> Digital marketing (Google)</a
+        >
+        <a
+          href="https://www.freecodecamp.org/certification/Naveen-Das/responsive-web-design"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="far fa-phone-laptop"></i> R.W.D.(freecodecamp)</a
+        >
+        <a
+          href="https://www.sololearn.com/Certificate/1165-19655470/jpg/"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="fas fa-laptop-code"></i> Coding for marketers</a
+        >
+        <a
+          href="https://www.sololearn.com/Certificate/1162-19655470/jpg/"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="far fa-phone-laptop"></i> Responsive Web Design</a
+        >
+        <a
+          href="https://www.sololearn.com/certificates/course/en/19655470/1157/landscape/png"
+          target="_blank"
+          title="Click Me"
+          rel="noopener noreferrer nofollow"
+          ><i class="fab fa-python"></i> Python Beginners</a
+        >
+      </div>
     </div>
 
-    <div class="contact-img">
-      <img src="images/contact-me.webp" alt="boy">
-    </div>
+    <!-- PROJECTS SECTION -->
 
-  </section>
+    <section id="project">
+      <div class="headings"><i class="fas fa-code"></i> Projects</div>
+      <hr />
+      <div class="pro-container">
+        <div class="slide-track">
+          <div class="pro-item">
+            <img src="images/hotel.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">Hotel-Paradise</p>
+                <p>HTML / CSS</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://hotel-paradize.netlify.app"
+                  target="_blank"
+                  aria-label="Hotel-paradise"
+                  rel="noopener noreferrer nofollow"
+                  >View Project <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/portfolio.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">Portfolio</p>
+                <p>HTML / CSS / JS</p>
+              </div>
+              <div class="pro-button">
+                <a href="https://naveenishere.me" target="_blank"
+                  >View Project
+                  <i
+                    class="far fa-arrow-right"
+                    aria-label="portfolio"
+                    rel="noopener noreferrer nofollow"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/musicpage.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">LiveMusic.in</p>
+                <p>HTML / CSS / JS</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://live-musics.netlify.app"
+                  target="_blank"
+                  aria-label="LiveMusic"
+                  rel="noopener noreferrer nofollow"
+                  >View Project <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/fb.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">Facebook-LoginPage-Clone</p>
+                <p>HTML / CSS</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://facelok.netlify.app"
+                  target="_blank"
+                  aria-label="Facelook"
+                  rel="noopener noreferrer nofollow"
+                  >View Project <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/musify.png" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">Muzifi</p>
+                <p>HTML / CSS / JS / JSON</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://muzifi.netlify.app"
+                  target="_blank"
+                  aria-label="Muzifi"
+                  rel="noopener noreferrer nofollow"
+                  >View Project <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/card.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">Profile Card</p>
+                <p>HTML / CSS</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://pro-card1.netlify.app"
+                  target="_blank"
+                  aria-label="Profile-card"
+                  rel="noopener noreferrer nofollow"
+                  >View Project <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <img src="images/view.webp" alt="Project.jpg" />
+            <div class="pro-overlay">
+              <div class="pro-content">
+                <p class="pro-para">View My More Projects</p>
+              </div>
+              <div class="pro-button">
+                <a
+                  href="https://naveenhere.github.io/Project-Page/"
+                  target="_blank"
+                  aria-label="Project-page"
+                  rel="noopener noreferrer nofollow"
+                  >View More <i class="far fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- FOOTER SECTION -->
-  <footer>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/naveen-das-2094321a0" target="_blank" aria-label="LinkedIn"
-          rel="noopener noreferrer nofollow"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="https://instagram.com/here_is_naveen_?utm_medium=copy_link" target="_blank" aria-label="Instagram"
-          rel="noopener noreferrer nofollow"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://github.com/NaveenHere" target="_blank" aria-label="Github"
-          rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://www.behance.net/naveenishere/" target="_blank" aria-label="Behance"
-          rel="noopener noreferrer nofollow"><i class="fab fa-behance-square"></i></a></li>
-    </ul>
+      <!-- UI DESIGN SECTION -->
 
-    <div id="copy">
-      <p>Made by <span>Naveen Das</span> | &#169; 2021 All rights reserved.</p>
-    </div>
+      <div class="headings"><i class="fas fa-pencil-ruler"></i> UI Designs</div>
+      <div>
+        Visit my Behance profile for more designs & my work
+        <a
+          href="https://www.behance.net/naveenishere/"
+          id="be-link"
+          ref="nofollow noopener noreferer"
+          target="_blank"
+          title="Click to visit"
+          >Behance</a
+        >
+      </div>
+      <div class="row row_toggle">
+        <div class="column">
+          <img src="images/mockup.webp" alt="ui-mockup" />
+          <img src="images/UI.webp" alt="ui-mockup" />
+        </div>
+        <div class="column">
+          <img src="images/mindpeers-mock.webp" alt="ui-mockup" />
+          <img src="images/arena.webp" alt="ui-mockup" />
+        </div>
+        <div class="column">
+          <img src="images/landingpage.webp" alt="ui-mockup" />
+          <img src="images/iphone mockup.webp" alt="ui-mockup" />
+        </div>
+        <div class="column">
+          <img src="images/gaming-gear-mock.webp" alt="ui-mockup" />
+          <img src="images/iso-mockup.webp" alt="ui-mockup" />
+        </div>
+        <div class="column">
+          <img src="images/CCC.webp" alt="ui-mockup" />
+        </div>
+      </div>
+      <div id="toggle_see">
+        See More Designs <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
 
-  </footer>
+    <!-- CONTACT SECTION -->
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="main.js"></script>
-</body>
+    <section id="contact">
+      <div class="contact-content">
+        <div class="headings">
+          <i class="fas fa-phone-square-alt"></i> Contact Me
+        </div>
+        <hr />
 
+        <div>
+          <p><i class="fas fa-map-marker-alt"></i> Uttar Pradesh, INDIA</p>
+          <p><i class="fa fa-phone"></i> Phone: +91 8448953175</p>
+          <p><i class="fa fa-envelope"> </i> Email: naveendas8900@gmail.com</p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="" target="_blank">
+          <p><input type="text" placeholder="Name" required name="Name" /></p>
+          <p>
+            <input type="email" placeholder="Email" required name="Email" />
+          </p>
+          <p>
+            <input type="text" placeholder="Subject" required name="Subject" />
+          </p>
+          <p>
+            <input type="text" placeholder="Message" required name="Message" />
+          </p>
+          <p>
+            <button type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <div class="contact-img">
+        <img src="images/contact-me.webp" alt="boy" />
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/naveen-das-2094321a0"
+            target="_blank"
+            aria-label="LinkedIn"
+            rel="noopener noreferrer nofollow"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/here_is_naveen_?utm_medium=copy_link"
+            target="_blank"
+            aria-label="Instagram"
+            rel="noopener noreferrer nofollow"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/NaveenHere"
+            target="_blank"
+            aria-label="Github"
+            rel="noopener noreferrer nofollow"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.behance.net/naveenishere/"
+            target="_blank"
+            aria-label="Behance"
+            rel="noopener noreferrer nofollow"
+            ><i class="fab fa-behance-square"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div id="copy">
+        <p>
+          Made by <span>Naveen Das</span> | &#169; 2021 All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
