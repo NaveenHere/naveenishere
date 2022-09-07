@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -15,15 +16,70 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #000;
+  background-color: #001c1c;
   color: #fff;
-  font-weight: 600;
   user-select: none;
 }
 
+.topnav {
+  overflow: hidden;
+  padding: 1.4rem;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.topnav a:hover {
+  color: turquoise;
+  animation: nav-logo 3s infinite ease;
+}
+
+
+@keyframes nav-logo {
+  0%, 100% {
+    color: tan;
+    text-shadow: 0px 0px 10px tan;
+  }
+
+  25% {
+    color: turquoise;
+    text-shadow: 0px 0px 10px turquoise;
+  }
+
+  50% {
+    color: palevioletred;
+    text-shadow: 0px 0px 10px palevioletred;
+  }
+}
+
+.topnav a.active {
+  color: turquoise;
+  float: left;
+  font-size: 1.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .topnav {
+    display: none;
+  }
+}
+
+
 .headings {
   font-size: 1.8rem;
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 8rem 0 1.5rem 0;
 }
 
 p {
@@ -35,31 +91,7 @@ p {
 nav {
   background-color: transparent;
   padding: 5px;
-}
-
-.nav-logo {
-  display: inline;
-  position: absolute;
-  top: 48px;
-  left: 42px;
-  color: #fff;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
-  animation: nav-logo 3s infinite ease;
-}
-
-@keyframes nav-logo {
-  0%, 100% {
-    color: tan;
-  }
-
-  25% {
-    color: turquoise;
-  }
-
-  50% {
-    color: palevioletred;
-  }
+  display: none;
 }
 
 .overlay {
@@ -158,7 +190,7 @@ nav {
 
 /* CV Button */
 .CV {
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
 }
 
 .CV a {
@@ -177,7 +209,7 @@ nav {
   box-shadow: 0px 0px 10px turquoise;
 }
 
-#hire {
+#mywork {
   margin: 0 1rem 0 1rem;
 }
 
@@ -188,7 +220,7 @@ nav {
 }
 
 .img-contain {
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,109 +451,74 @@ nav {
 }
 
 .pro-container {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  background: transparent;
-}
-
-.pro-container::-webkit-scrollbar {
-  display: none;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(125px * 18);
-  animation: autoscroll 40s linear infinite;
-}
-
-@keyframes autoscroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-125px * 9));
-  }
-}
-
-.pro-item {
-  width: 30%;
-  height: auto;
-  flex-shrink: 0;
-  margin: 1rem .5rem 1rem .5rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(31, 38, 135, 0.548);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-
-.pro-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.pro-item:hover .pro-overlay {
-  bottom: 0;
-  height: 100%;
-  border: 2px solid teal;
-}
-
-.pro-overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.pro-content {
-  white-space: nowrap;
-  color: teal;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.pro-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 70%;
+  flex-direction: row;
+  margin-top: 5rem;
+  height: 100%;
+  background: #000f0f;
 }
 
-.pro-button a {
-  text-decoration: none;
-  border: 2px solid turquoise;
+.pro-content {
+  flex: 50%;
+  padding: 0 4rem;
+}
+
+.pro-content>h1 {
+  font-size: 2rem;
+}
+
+.pro-content>h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
   color: turquoise;
-  border-radius: 5px;
-  padding: .5rem;
 }
 
-.pro-button a:hover {
+.pro-content >p {
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+
+.pro-color-line {
+  border: 2px solid turquoise;
+  margin-top: 1.2rem;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: #f7f7f7;
+}
+
+.fa-brands{
+  margin-right: 1.8rem;
+}
+
+.pro-img {
+  flex: 50%;
+}
+
+.pro-img>img {
+  width: 50%;
+}
+
+.pro-button {
+  text-decoration: none;
+  background-color: turquoise;
+  border-radius: 5px;
+  color: #000;
+  padding: .8rem;
+  margin-right: 2rem;
+}
+
+.pro-button:hover {
   background-color: turquoise;
   color: white;
-  box-shadow: 0px 0px 8px turquoise;
+  box-shadow: 0px 0px 4px turquoise;
   transition: .3s ease;
 }
 
-.pro-para {
-  color: teal;
-}
 
 /* UI Design Section */
 
@@ -617,7 +614,7 @@ button:hover {
 footer {
   padding: 2% 10%;
   margin-top: 2%;
-  background: #232931;
+  background: #1e1e1e;
 }
 
 footer>ul {
@@ -691,7 +688,16 @@ footer>ul li a:hover::before {
 
 @media screen and (max-width: 480px) {
 
+  .headings {
+    margin: 3.5rem 0 1.5rem 0;
+  }
+
   /* Nav Bar Section */
+
+  nav {
+    display: block;
+  }
+
   .nav-logo {
     display: none;
   }
@@ -808,43 +814,55 @@ footer>ul li a:hover::before {
   }
 
   /* Project Section */
+  #project {
+    height: 100%;
+    padding: 0 5%;
+  }
+  
   .pro-container {
-    width: 98%;
-    margin: 0rem;
+    flex-direction: column-reverse;
   }
-
-  .pro-item {
-    width: 98%;
+  
+  .pro-content {
+    flex: 50%;
+    padding: 1.4rem;
   }
-
-  .slide-track {
-    width: calc(210px * 18);
+  
+  .pro-content>h1 {
+    font-size: 1.8rem;
   }
-
-  @keyframes autoscroll {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(calc(-210px * 9));
-    }
+  
+  .pro-content>h2 {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: turquoise;
   }
-
-  .row_toggle {
-    height: 370vw;
-    overflow: hidden;
+  
+  .pro-content >p {
+    font-size: 1rem;
+    margin: 2rem 0;
   }
-
-  /*Toggle function */
-  #toggle_see {
-    font-size: .8rem;
-    text-align: center;
-    border: 2px solid turquoise;
-    border-radius: 10px;
+  
+  .pro-color-line {
+    margin-top: 1.2rem;
+  }
+  
+  .tech-icon {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  
+  .pro-img {
+    flex: 50%;
+  }
+  
+  .pro-img>img {
+    width: 50%;
+  }
+  
+  .pro-button {
     padding: .6rem;
-    margin: 0 2rem;
-    display: block;
+    margin-right: 1rem;
   }
 
   .column {
