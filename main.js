@@ -25,14 +25,49 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// See more toggle button
-let toggle_see = document.getElementById('toggle_see');
-let row = document.querySelector('.row');
-toggle_see.addEventListener('click', () => {
-  row.classList.toggle('row_toggle');
-  if (row.classList.contains('row_toggle')) {
-    toggle_see.innerHTML = 'See More Designs <i class="fas fa-chevron-down"></i>';
-  } else {
-    toggle_see.innerHTML = 'See Less Designs <i class="fas fa-chevron-up"></i>';
-  }
+var project = $('.project-carousel');
+project.owlCarousel({
+    items:1,
+    margin: 10,
+    loop:true,
+    dots: false,
+    autoHeight:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
+})
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:5,
+    loop:true,
+    dots: false,
+    margin:20,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5,
+        }
+    }
 })
