@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet nofollow noopener"
@@ -54,8 +68,16 @@
   <body>
     <!-- ScrolltoTop Button -->
     <button onclick="topFunction()" id="ScrollBtn" title="Go to top">
-      <i class="fas fa-arrow-up"></i>
+      <i class="fa-solid fa-up-long"></i>
     </button>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active"><i class="fa-solid fa-code"></i> Naveen Das</a>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
     <!-- NAVIGATION BAR -->
     <div id="myNav" class="overlay">
@@ -66,7 +88,6 @@
         aria-label="close"
         >&times;</a
       >
-      <div class="nav-logo">Naveen Das</div>
 
       <div class="overlay-content">
         <a href="#home" onclick="closeNav()" aria-label="home">Home</a>
@@ -105,10 +126,10 @@
             </a>
 
             <a
-              href="mailto: naveendas8900@gmail.com"
-              aria-label="hire me"
-              id="hire"
-              >Hire Me <i class="fa-solid fa-user"></i
+              href="mailto: naveendas8900@gmail.comz"
+              aria-label="see my work"
+              id="mywork"
+              >See my work <i class="fa-solid fa-eyes"></i
             ></a>
 
             <!-- <a href="images/Profile.mp4" aria-label="video" id="vid-button" target="_blank" loading="lazy"><i class="fa-solid fa-play" title="Click to play"></i></a> -->
@@ -119,7 +140,7 @@
       <!-- Image Container -->
       <section
         class="img-contain"
-        data-aos="fade-down"
+        data-aos="fade-right"
         data-aos-duration="2000"
       >
         <img src="images/men1.webp" alt="programming boy" />
@@ -142,7 +163,7 @@
           Hello there, I am Naveen Das, a
           <b>"Front-end Web Dev & UI Designer"</b>. I was born in Uttar Pradesh,
           India. I am currently pursuing Bachelor's of Computer Application
-          (BCA) from CCS University, Meerut. From my school days i love drawing
+          (BCA) from CCS University, Meerut. From my school days I love drawing
           and designing. So, I found my passion in "Frontend Web Development &
           UI Designing. By the help of web designing I can turn my ideas and
           imaginations from paper to web.<br /><span id="let"
@@ -266,136 +287,80 @@
     <section id="project">
       <div class="headings"><i class="fas fa-code"></i> Projects</div>
       <hr />
-      <div class="pro-container">
-        <div class="slide-track">
-          <div class="pro-item">
-            <img src="images/hotel.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">Hotel-Paradise</p>
-                <p>HTML / CSS</p>
+
+      <div class="owl-carousel owl-theme project-carousel">
+        <div class="item">
+          <div class="pro-container">
+        
+            <div class="pro-content">
+              <h2>FRONT-END & FUNCTIONALITIES</h2>
+              <h1>MUZIFI</h1>
+              <hr class="pro-color-line">
+              <div class="tech-icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
               </div>
-              <div class="pro-button">
-                <a
-                  href="https://hotel-paradize.netlify.app"
-                  target="_blank"
-                  aria-label="Hotel-paradise"
-                  rel="noopener noreferrer nofollow"
-                  >View Project <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
+              <p>Muzifi is a music listening platform offers all basic features.</p>
+              <a href="https://muzifi.netlify.app/" class="pro-button">Visit Site</a>
+              <a href="#" class="pro-button">Source Code</a>
             </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/portfolio.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">Portfolio</p>
-                <p>HTML / CSS / JS</p>
-              </div>
-              <div class="pro-button">
-                <a href="https://naveenishere.me" target="_blank"
-                  >View Project
-                  <i
-                    class="far fa-arrow-right"
-                    aria-label="portfolio"
-                    rel="noopener noreferrer nofollow"
-                  ></i
-                ></a>
-              </div>
+    
+            <div class="pro-img">
+              <img src="images/musify.png" alt="">
             </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/musicpage.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">LiveMusic.in</p>
-                <p>HTML / CSS / JS</p>
-              </div>
-              <div class="pro-button">
-                <a
-                  href="https://live-musics.netlify.app"
-                  target="_blank"
-                  aria-label="LiveMusic"
-                  rel="noopener noreferrer nofollow"
-                  >View Project <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/fb.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">Facebook-LoginPage-Clone</p>
-                <p>HTML / CSS</p>
-              </div>
-              <div class="pro-button">
-                <a
-                  href="https://facelok.netlify.app"
-                  target="_blank"
-                  aria-label="Facelook"
-                  rel="noopener noreferrer nofollow"
-                  >View Project <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/musify.png" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">Muzifi</p>
-                <p>HTML / CSS / JS / JSON</p>
-              </div>
-              <div class="pro-button">
-                <a
-                  href="https://muzifi.netlify.app"
-                  target="_blank"
-                  aria-label="Muzifi"
-                  rel="noopener noreferrer nofollow"
-                  >View Project <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/card.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">Profile Card</p>
-                <p>HTML / CSS</p>
-              </div>
-              <div class="pro-button">
-                <a
-                  href="https://pro-card1.netlify.app"
-                  target="_blank"
-                  aria-label="Profile-card"
-                  rel="noopener noreferrer nofollow"
-                  >View Project <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro-item">
-            <img src="images/view.webp" alt="Project.jpg" />
-            <div class="pro-overlay">
-              <div class="pro-content">
-                <p class="pro-para">View My More Projects</p>
-              </div>
-              <div class="pro-button">
-                <a
-                  href="https://naveenhere.github.io/Project-Page/"
-                  target="_blank"
-                  aria-label="Project-page"
-                  rel="noopener noreferrer nofollow"
-                  >View More <i class="far fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
+    
           </div>
         </div>
-      </div>
+
+        <div class="item">
+          <div class="pro-container">
+        
+            <div class="pro-content">
+              <h2>FRONT-END & DESIGN</h2>
+              <h1>HOTEL PARADIZE</h1>
+              <hr class="pro-color-line">
+              <div class="tech-icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <p>Hotel Paradize is a Front-end design of the hotel websites.</p>
+              <a href="https://hotel-paradize.netlify.app/" class="pro-button">Visit Site</a>
+              <a href="https://github.com/naveenhere/Hotel-paradise.com" class="pro-button">Source Code</a>
+            </div>
+    
+            <div class="pro-img">
+              <img src="images/hotel-paradize.png" alt="">
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pro-container">
+        
+            <div class="pro-content">
+              <h2>FRONT-END</h2>
+              <h1>PIZZALICIOUS</h1>
+              <hr class="pro-color-line">
+              <div class="tech-icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <p>Pizzalicious is an online pizza ordering website.</p>
+              <a href="https://pizzaliciouz.netlify.app/" class="pro-button">Visit Site</a>
+              <a href="https://github.com/naveenhere/pizzalicious.com" class="pro-button">Source Code</a>
+            </div>
+    
+            <div class="pro-img">
+              <img src="images/pizzalicious.png" alt="">
+            </div>
+    
+          </div>
+        </div>
+
+    </div>
 
       <!-- UI DESIGN SECTION -->
 
@@ -411,29 +376,22 @@
           >Behance</a
         >
       </div>
-      <div class="row row_toggle">
-        <div class="column">
-          <img src="images/mockup.webp" alt="ui-mockup" />
-          <img src="images/UI.webp" alt="ui-mockup" />
-        </div>
-        <div class="column">
-          <img src="images/mindpeers-mock.webp" alt="ui-mockup" />
-          <img src="images/arena.webp" alt="ui-mockup" />
-        </div>
-        <div class="column">
-          <img src="images/landingpage.webp" alt="ui-mockup" />
-          <img src="images/iphone mockup.webp" alt="ui-mockup" />
-        </div>
-        <div class="column">
-          <img src="images/gaming-gear-mock.webp" alt="ui-mockup" />
-          <img src="images/iso-mockup.webp" alt="ui-mockup" />
-        </div>
-        <div class="column">
-          <img src="images/CCC.webp" alt="ui-mockup" />
-        </div>
-      </div>
       <div id="toggle_see">
         See More Designs <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <div class="owl-carousel owl-theme" style="padding-top: 3rem">
+        <div class="item"><img src="images/mindpeers-mock.webp" alt="" /></div>
+        <div class="item"><img src="images/mockup.webp" alt="" /></div>
+        <div class="item"><img src="images/iso-mockup.webp" alt="" /></div>
+        <div class="item"><img src="images/landingpage.webp" alt="" /></div>
+        <div class="item"><img src="images/iphone mockup.webp" alt="" /></div>
+        <div class="item">
+          <img src="images/gaming-gear-mock.webp" alt="" />
+        </div>
+        <div class="item"><img src="images/CCC.webp" alt="" /></div>
+        <div class="item"><img src="images/arena.webp" alt="" /></div>
+        <div class="item"><img src="images/UI.webp" alt="" /></div>
       </div>
     </section>
 
@@ -526,6 +484,18 @@
       </div>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
   </body>
