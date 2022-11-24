@@ -71,3 +71,16 @@ owl.owlCarousel({
         }
     }
 })
+
+var date = new Date();
+const todaydate = document.querySelector('.date');
+const todayday = document.querySelector('.day');
+const noofday = ["Sunday!","Monday!","Tuesday!","Wednesday!","Thursday!","Friday!","Saturday!",];
+
+function printDay(){
+  var date = new Date();
+  var today = date.getDay();
+  var day = noofday[today];
+  todayday.innerHTML = day;
+}
+printDay();
