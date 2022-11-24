@@ -183,7 +183,18 @@ nav {
   margin: 1rem 0rem;
 }
 
-#highlight {
+.day-h1{
+  font-weight: 500;
+}
+
+.hello-img{
+  max-width: 50px;
+  max-height: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.highlight {
   color: turquoise;
   font-weight: 900 !important;
 }
@@ -746,6 +757,17 @@ footer>ul li a:hover::before {
 
   .typing>p {
     font-size: 1rem;
+  }
+
+  .day-h1{
+    font-size: 1.6rem;
+  }
+  
+  .hello-img{
+    max-width: 30px;
+    max-height: 30px;
+    position: relative;
+    top: 5px;
   }
 
   .CV {
