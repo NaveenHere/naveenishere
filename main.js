@@ -71,5 +71,3 @@ owl.owlCarousel({
         }
     }
 })
-
-grecaptcha.execute();
