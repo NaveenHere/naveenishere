@@ -84,3 +84,12 @@ function printDay(){
   todayday.innerHTML = day;
 }
 printDay();
+
+$(document).keydown(function(e){ 
+  if(e.which === 123){ 
+
+     return false; 
+
+  } 
+
+}); 
